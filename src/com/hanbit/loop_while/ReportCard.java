@@ -4,17 +4,18 @@ public class ReportCard {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("If you want to stop, Type -1");
+		System.out.println("If the number of Subject is 6, Auto quit!");
 		System.out.print("Name:");
 		String name = scanner.next();
 		int total = 0;
 		char grade = 0;
 		int count = 0;
-		while (true) {
+		while (count<=5) {
 			System.out.println("Score:");
 			int score = scanner.nextInt();
-			if (score == -1) {break;}
-			total = total + score;
-			count = count + 1;
+			//if (score == -1) {break;}
+			total+=score;
+			count++;
 		}
 		int average = total / count;
 		if (average >= 90) {
@@ -26,8 +27,9 @@ public class ReportCard {
 		} else {
 			grade = 'D';
 		}
-		System.out.println("Name:" + name);
-		System.out.println("Total:" + total);
+		//System.out.println("Name"+name);
+		//System.out.println("Total:" + total);
+		System.out.printf("%s:%d \n", "Total", total);
 		System.out.println("Average:" + average);
 		System.out.println("Grade:" + grade);
 	}

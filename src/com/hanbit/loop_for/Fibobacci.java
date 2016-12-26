@@ -2,9 +2,12 @@ package com.hanbit.loop_for;
 
 public class Fibobacci {
 public static void main(String[] args) {
-	int a = 1, b=1, c=2, sum=0 ; 
-	for(int i=3; i<11; ){
+	int a = 1, b=1, c=2, sum= 2; 
+	for(int i=3; i<6; i++){
 		c = a+b;
+		a = b+c;
+		b = c+a;
+		sum=a+b+c;
 	}
 	System.out.printf(
 	                  "=====================================\n"

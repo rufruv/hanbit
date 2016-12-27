@@ -9,12 +9,7 @@ package com.hanbit.loop_for;
 public class Unary {
 	public static void main(String[] args) {
 		int sum = 0;
-		/*int num = 0;
-		while (num < 5) {
-			num++;
-			System.out.println("NUM:" + num);
-			sum += num;
-		}*/
+		
 		for(int num = 0; num < 5; num++ ){
 			System.out.println("NUM:" + num);
 			sum += num;

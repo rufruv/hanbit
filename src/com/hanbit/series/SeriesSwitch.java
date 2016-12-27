@@ -1,4 +1,4 @@
-package com.hanbit.loop_while;
+package com.hanbit.series;
 
 public class SeriesSwitch {
 public static void main(String[] args) {

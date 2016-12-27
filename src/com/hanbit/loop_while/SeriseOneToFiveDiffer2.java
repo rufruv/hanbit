@@ -12,7 +12,7 @@ public static void main(String[] args) {
 	int sum = 0;
 	int num = 1;
 	while(num<=20){
-		//System.out.println("Number:"+num);
+		System.out.println("Number:"+num);
 		sum+=num;
 		//sum=sum+num;
 		num+=2;

@@ -12,7 +12,6 @@ public class ContinueDemo {
 				break;
 			}
 		}
-		System.out.printf("%s: \n"
-				+ "%d", "합", sum);
+		System.out.printf("%s:\n+%d", "합", sum);
 	}
 }

@@ -9,19 +9,24 @@ public class ReportCard2 {
 		String name = s.next();
 		int total = 0, average = 0, i = 0 ;
 		char grade = 0;
-		String resultSub = " ";
-		String[]sub = {"국어", "영어", "수학", "사회", "과학", "평균","학점"};
-		String resultScore = " ";
+		String subString = "=======================\n";
+		String[]sub = {"이름", "국어", "영어", "수학", "사회", "과학", "평균","학점"};
 		int[]score = new int[5];
 		
 		for(i=0; i<sub.length; i++){
-			
+			subString+=sub[i]+"\t";
 		}
+		
+		subString+="\n--------------------------------\n"+name+"\t";
+		String temp="  ";
 		for(i=0; i<score.length; i++){
-			System.out.printf("%s", "Score:");
+			//System.out.printf("%s", "Score:");
 			score[i]=s.nextInt();
 			total+=score[i];
+			temp+=score[i]+"\t";
 		}
+		subString+=temp;
+		
 		average = total / score.length;
 		int sw = average/10; 
 		switch(sw){
@@ -31,11 +36,9 @@ public class ReportCard2 {
 			default: grade = 'D'; break;
 		}
 		
-		for(i=0; i<sub.length; i++){
-			System.out.printf("%s\t", sub[i]);
-		}
-		for(i=0; i<score.length; i++){
-			System.out.printf("%d\t", score[i]);
-		}
+		subString+=(average+"\t"+grade);
+		subString+="\n====================";
+		System.out.printf("%s", subString);
+	}
 }
-}
+

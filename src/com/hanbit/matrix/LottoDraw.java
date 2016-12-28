@@ -1,4 +1,4 @@
-package com.hanbit.math;
+package com.hanbit.matrix;
 /**
 @FILE  : LottoDraw.java
 @DATE  : 2016. 12. 27.

@@ -20,27 +20,23 @@ public class Money {
      십원 : 2개
    ********************************************************
  * */
-      public static void main(String[] args) {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
 
-        System. out.println( "금액을 입력하세요" );
+		System.out.println("금액을 입력하세요");
+		int money = s.nextInt();
 
-        Scanner s = new Scanner(System. in);
+		int[] moneyUnit = { 50000, 10000, 5000, 1000, 500, 100, 50, 10 };
 
-        int money = s.nextInt();
+		int mok = 0;
+		int nmg = 0;
+		System.out.println("Money:" + money);
 
-        int[] moneyUnit = { 50000, 10000, 5000, 1000, 500, 100, 50, 10 };
-
-        int mok = 0;
-
-        int nmg = 0;
-
-        System. out.println( "Money:" + money);
-
-        for (int i = 0; i < moneyUnit.length; i++) {
-
-   
-
-        }
-
-    }
+		for (int i = 0; i < moneyUnit.length; i++) {
+			mok = money / moneyUnit[i];
+			nmg = money % moneyUnit[i];
+			money = nmg;
+			System.out.printf("%d%s%s %d%s\n",moneyUnit[i],"원",":",mok,"매");
+		}
+	}
 }

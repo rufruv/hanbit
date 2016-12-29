@@ -17,14 +17,7 @@ public class SumOfArray2 {
 		for(i=0; i<arr.length; i++ ){
 			arr[i]=s.nextInt();
 			sum+=arr[i];
-			/*if(i<4){
-				System.out.printf("%d %s", arr[i], "+" );
-			} else {
-				System.out.printf("%d %s", arr[i], "=");
-			}*/
-			//System.out.printf((i<4)?arr[i]+"+":arr[i]+"=");
-			//System.out.printf((arr[i]==arr.length)?arr[i]+"=":arr[i]+"+");
 		}
 		System.out.printf("%d", sum);
-}
+	}
 }

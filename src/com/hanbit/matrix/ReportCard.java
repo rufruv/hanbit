@@ -5,8 +5,8 @@ public class ReportCard {
 		Scanner s = new Scanner(System.in);
 		System.out.println("If you want to stop, Type -1");
 		System.out.println("If the number of Subject is 6, Auto quit!");
-//		System.out.print("Name:");
-//		String name = scanner.next();
+		System.out.print("Name:");
+		String name = s.next();
 		int total = 0, average = 0, i = 0 ;
 		char grade = 0;
 		int[]score = new int[5]; 
@@ -29,11 +29,11 @@ public class ReportCard {
 		System.out.println("Average:"+average);
 		System.out.println("Grade:"+grade);
 		System.out.printf(
-				"========================================"+
-		        "이름     국어  영어  수학  사회  과학  평균  학점"+
-				"----------------------------------------"+
-		        "홍길동   70   70   70   70   70   70   C  "+
-				"========================================");
+				"========================================\n"+
+		        "이름     국어  영어  수학  사회  과학  평균  학점\n"+
+				"----------------------------------------\n"+
+		        "홍길동   70   70   70   70   70   70   C  \n"+
+				"========================================\n");
 
 }
 }

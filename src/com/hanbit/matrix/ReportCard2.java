@@ -9,7 +9,7 @@ public class ReportCard2 {
 		String name = s.next();
 		int total = 0, average = 0, i = 0 ;
 		char grade = 0;
-		String subString = "=======================\n";
+		String subString = "=========================================================\n";
 		String[]sub = {"이름", "국어", "영어", "수학", "사회", "과학", "평균","학점"};
 		int[]score = new int[5];
 		
@@ -17,12 +17,16 @@ public class ReportCard2 {
 			subString+=sub[i]+"\t";
 		}
 		
-		subString+="\n--------------------------------\n"+name+"\t";
+		subString+="\n---------------------------------------------------\n"+name+"\t";
 		String temp="  ";
 		for(i=0; i<score.length; i++){
-			//System.out.printf("%s", "Score:");
+			System.out.printf("%s", "Score:");
 			score[i]=s.nextInt();
 			total+=score[i];
+			if(score[i]>100 || score[i]<0){
+				System.out.println("다시입력하세요:");
+				i=i-1;
+			}
 			temp+=score[i]+"\t";
 		}
 		subString+=temp;

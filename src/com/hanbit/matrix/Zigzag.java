@@ -34,7 +34,7 @@ public class Zigzag {
 		for(i=0; i<5; i++){
 			System.out.println("");
 			for(j=0;j<5;j++){
-				System.out.printf("%d", mtx[i][j]);
+				System.out.printf("[%d]", mtx[i][j]);
 			}
 		}
 	}

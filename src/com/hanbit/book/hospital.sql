@@ -8,7 +8,7 @@ CREATE TABLE Doctors(
 	doc_id DECIMAL(10) NOT NULL,
 	major_treat VARCHAR2(25) NOT NULL,
 	doc_name VARCHAR2(20) NOT NULL,
-	doc_gen CHAR(1) NOT NULL,
+	doc_gen VARCHAR2(1) NOT NULL,
 	doc_phone VARCHAR2(15),
 	doc_email VARCHAR2(50) NOT NULL,
 	doc_position VARCHAR2(20) NOT NULL,
@@ -19,7 +19,7 @@ CREATE TABLE Nurses(
 	nur_id DECIMAL NOT NULL,
 	major_job VARCHAR2(25) NOT NULL,
 	nur_name VARCHAR2(20) NOT NULL,
-	nur_gen CHAR(1) NOT NULL,
+	nur_gen VARCHAR2(1) NOT NULL,
 	nur_phone VARCHAR2(15),
 	nur_email VARCHAR2(50),
 	nur_position VARCHAR2(20) NOT NULL,
@@ -31,7 +31,7 @@ CREATE TABLE Patients(
 	nur_id DECIMAL NOT NULL,
 	doc_id DECIMAL NOT NULL,	
 	pat_name VARCHAR2(20) NOT NULL,
-	pat_gen CHAR(1) NOT NULL,
+	pat_gen VARCHAR2(1) NOT NULL,
 	pat_jumin VARCHAR2(14) NOT NULL,
 	pat_addr VARCHAR2(100) NOT NULL,
 	pat_phone VARCHAR2(15),
@@ -182,14 +182,5 @@ INSERT INTO Charts(chart_id, treat_id, doc_id, pat_id, nur_id, chart_contents)
 VALUES('s_140303003', 140303003, 091001, 4234, 130211, '입원 치료');
 INSERT INTO Charts(chart_id, treat_id, doc_id, pat_id, nur_id, chart_contents)
 VALUES('p_140308087', 140308087, 062019, 7643, 071018, '장염 입원치료');
-
-
-
-
-
-
-
-
-
 
 
